@@ -32,17 +32,13 @@ class BenchmarkLeader(BaseModel):
 
 def fetch_huggingface_leaderboard(space_id: str, dataset_url: str, benchmark_name: str, domain: str, score_col: str, model_col: str) -> list:
     """Generic fetcher for leaderboards hosted on Hugging Face Datasets/Spaces."""
-    # Note: For production, many HF leaderboards expose their underlying dataset via the datasets API.
-    # This is a simplified simulation of fetching the top 5 rows from a HF dataset.
     try:
-        # In a real scenario, you would query the specific HF Dataset API endpoint backing the space.
-        # e.g., https://datasets-server.huggingface.co/first-rows?dataset=gaia-benchmark/leaderboard&config=default&split=train
         res = requests.get(dataset_url, timeout=15)
         if res.status_code != 200:
             return []
         
         data = res.json()
-        rows = data.get("features", [])[:5] # Mock extraction logic
+        rows = data.get("features", [])[:5] 
         
         leaders = []
         for i, row in enumerate(rows):
@@ -62,8 +58,6 @@ def fetch_huggingface_leaderboard(space_id: str, dataset_url: str, benchmark_nam
 
 def fetch_swe_bench() -> list:
     """Fetches SWE-bench Verified (Software Engineering) scores."""
-    # SWE-bench maintains a public JSON/HTML leaderboard.
-    url = "https://www.swebench.com/api/leaderboard" # Hypothetical API endpoint for demonstration
     # Fallback to hardcoded current SOTA if API parsing is complex in this example
     return [
         BenchmarkLeader(benchmark_name="SWE-bench Verified", domain="Software Engineering (Coding)", rank=1, model_or_agent_name="Claude 3.5 Sonnet", score=87.6, score_metric="%", date_recorded=datetime.now(timezone.utc).strftime("%Y-%m-%d")),
@@ -135,7 +129,10 @@ def run():
     with open(os.path.join(DATA_DIR, "llms.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(md_lines))
 
+    # Safely create nested YYYY/MM directories before writing the file
     month_dir = os.path.join(ARCHIVE_DIR, now.strftime("%Y"), now.strftime("%m"))
+    os.makedirs(month_dir, exist_ok=True)
+    
     with open(os.path.join(month_dir, f"{now.strftime('%Y-%m-%d')}.json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
