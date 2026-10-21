@@ -1,0 +1,23 @@
+# Agent Benchmark State-of-the-Art (SOTA) Radar
+> Real-time tracking of the world's top AI agents across coding, reasoning, and computer use.
+
+## SWE-bench Verified (Software Engineering (Coding))
+| Rank | Model / Agent Framework | Score | Date |
+| :--- | :--- | :--- | :--- |
+| #1 | **Claude 3.5 Sonnet** | 87.6% | 2026-10-21 |
+| #2 | **GPT-4o** | 85.0% | 2026-10-21 |
+
+
+## GAIA (Test Set) (General Reasoning & Tool Use)
+| Rank | Model / Agent Framework | Score | Date |
+| :--- | :--- | :--- | :--- |
+| #1 | **Shadow Harness V8.01 (Multi-model)** | 94.0% | 2026-10-12 |
+| #2 | **Claude 3.5 Sonnet** | 74.6% | 2026-04-30 |
+
+
+## OSWorld-Verified (Desktop Computer Automation)
+| Rank | Model / Agent Framework | Score | Date |
+| :--- | :--- | :--- | :--- |
+| #1 | **Intelligence-Indeed Agent** | 90.19% | 2026-07-25 |
+| #2 | **Claude 3.5 Sonnet (Computer Use)** | 85.96% | 2026-08-01 |
+
