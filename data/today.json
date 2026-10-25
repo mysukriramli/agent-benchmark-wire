@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-24T12:30:41.701519+00:00",
+    "generated_at": "2026-10-25T13:02:50.887031+00:00",
     "benchmarks_tracked": [
       "SWE-bench Verified",
       "GAIA (Test Set)",
@@ -16,7 +16,7 @@
       "model_or_agent_name": "Claude 3.5 Sonnet",
       "score": 87.6,
       "score_metric": "%",
-      "date_recorded": "2026-10-24"
+      "date_recorded": "2026-10-25"
     },
     {
       "benchmark_name": "SWE-bench Verified",
@@ -25,7 +25,7 @@
       "model_or_agent_name": "GPT-4o",
       "score": 85.0,
       "score_metric": "%",
-      "date_recorded": "2026-10-24"
+      "date_recorded": "2026-10-25"
     },
     {
       "benchmark_name": "GAIA (Test Set)",
