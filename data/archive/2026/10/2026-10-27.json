@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-27T14:10:29.115290+00:00",
+    "benchmarks_tracked": [
+      "SWE-bench Verified",
+      "GAIA (Test Set)",
+      "OSWorld-Verified"
+    ],
+    "schema_version": "1.0.0"
+  },
+  "leaderboards": [
+    {
+      "benchmark_name": "SWE-bench Verified",
+      "domain": "Software Engineering (Coding)",
+      "rank": 1,
+      "model_or_agent_name": "Claude 3.5 Sonnet",
+      "score": 87.6,
+      "score_metric": "%",
+      "date_recorded": "2026-10-27"
+    },
+    {
+      "benchmark_name": "SWE-bench Verified",
+      "domain": "Software Engineering (Coding)",
+      "rank": 2,
+      "model_or_agent_name": "GPT-4o",
+      "score": 85.0,
+      "score_metric": "%",
+      "date_recorded": "2026-10-27"
+    },
+    {
+      "benchmark_name": "GAIA (Test Set)",
+      "domain": "General Reasoning & Tool Use",
+      "rank": 1,
+      "model_or_agent_name": "Shadow Harness V8.01 (Multi-model)",
+      "score": 94.0,
+      "score_metric": "%",
+      "date_recorded": "2026-10-12"
+    },
+    {
+      "benchmark_name": "GAIA (Test Set)",
+      "domain": "General Reasoning & Tool Use",
+      "rank": 2,
+      "model_or_agent_name": "Claude 3.5 Sonnet",
+      "score": 74.6,
+      "score_metric": "%",
+      "date_recorded": "2026-04-30"
+    },
+    {
+      "benchmark_name": "OSWorld-Verified",
+      "domain": "Desktop Computer Automation",
+      "rank": 1,
+      "model_or_agent_name": "Intelligence-Indeed Agent",
+      "score": 90.19,
+      "score_metric": "%",
+      "date_recorded": "2026-07-25"
+    },
+    {
+      "benchmark_name": "OSWorld-Verified",
+      "domain": "Desktop Computer Automation",
+      "rank": 2,
+      "model_or_agent_name": "Claude 3.5 Sonnet (Computer Use)",
+      "score": 85.96,
+      "score_metric": "%",
+      "date_recorded": "2026-08-01"
+    }
+  ]
+}
