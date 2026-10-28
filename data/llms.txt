@@ -4,8 +4,8 @@
 ## SWE-bench Verified (Software Engineering (Coding))
 | Rank | Model / Agent Framework | Score | Date |
 | :--- | :--- | :--- | :--- |
-| #1 | **Claude 3.5 Sonnet** | 87.6% | 2026-10-27 |
-| #2 | **GPT-4o** | 85.0% | 2026-10-27 |
+| #1 | **Claude 3.5 Sonnet** | 87.6% | 2026-10-28 |
+| #2 | **GPT-4o** | 85.0% | 2026-10-28 |
 
 
 ## GAIA (Test Set) (General Reasoning & Tool Use)
